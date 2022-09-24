@@ -5,16 +5,20 @@
 |1,4
 
 # Value of 'encoding' when this file was written
-*encoding=latin1
+*encoding=utf-8
 
 
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:wq
+|2,0,1664021790,,"wq"
+:q
+|2,0,1664021736,,"q"
+:w
+|2,0,1664021704,,"w"
 :VimtexCompile
 |2,0,1664020791,,"VimtexCompile"
-:q
-|2,0,1664019074,,"q"
 :PlugInstall
 |2,0,1664018961,,"PlugInstall"
 :pluginstall
@@ -31,14 +35,10 @@
 |2,0,1664018539,,"q!"
 :p
 |2,0,1664018532,,"p"
-:wq
-|2,0,1664018520,,"wq"
 :w!
 |2,0,1664018518,,"w!"
 :new ~/.config/zathura/zathurarc
 |2,0,1664018504,,"new ~/.config/zathura/zathurarc"
-:w
-|2,0,1664018342,,"w"
 :wq!
 |2,0,1664018269,,"wq!"
 
@@ -64,28 +64,40 @@
 |3,0,36,0,1,0,1663981037," "
 
 # File marks:
-'0  1  0  ~/Downloads/kypriyanov/main.tex
-|4,48,1,0,1664021275,"~/Downloads/kypriyanov/main.tex"
-'1  1  0  ~/.gitignore
-|4,49,1,0,1664021273,"~/.gitignore"
-'2  4  0  ~/Downloads/kypriyanov/main.tex
-|4,50,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
-'3  4  0  ~/Downloads/kypriyanov/main.tex
-|4,51,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
-'4  1  8  ~/Downloads/kypriyanov/main.tex
-|4,52,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
-'5  1  8  ~/Downloads/kypriyanov/main.tex
-|4,53,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
-'6  1  8  ~/Downloads/kypriyanov/main.tex
-|4,54,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
-'7  1  0  ~/.config/zathura/zathurarc
-|4,55,1,0,1664018556,"~/.config/zathura/zathurarc"
-'8  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,56,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
-'9  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,57,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
+'0  10  9  ~/.gitignore
+|4,48,10,9,1664021791,"~/.gitignore"
+'1  1  20  ~/.gitignore
+|4,49,1,20,1664021736,"~/.gitignore"
+'2  1  20  ~/.gitignore
+|4,50,1,20,1664021736,"~/.gitignore"
+'3  1  0  ~/Downloads/kypriyanov/main.tex
+|4,51,1,0,1664021275,"~/Downloads/kypriyanov/main.tex"
+'4  1  0  ~/.gitignore
+|4,52,1,0,1664021273,"~/.gitignore"
+'5  1  0  ~/.gitignore
+|4,53,1,0,1664021273,"~/.gitignore"
+'6  4  0  ~/Downloads/kypriyanov/main.tex
+|4,54,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
+'7  4  0  ~/Downloads/kypriyanov/main.tex
+|4,55,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
+'8  1  8  ~/Downloads/kypriyanov/main.tex
+|4,56,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
+'9  1  8  ~/Downloads/kypriyanov/main.tex
+|4,57,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
 
 # Jumplist (newest first):
+-'  10  9  ~/.gitignore
+|4,39,10,9,1664021791,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1664021778,"~/.gitignore"
+-'  1  20  ~/.gitignore
+|4,39,1,20,1664021736,"~/.gitignore"
+-'  1  0  ~/Downloads/kypriyanov/main.tex
+|4,39,1,0,1664021275,"~/Downloads/kypriyanov/main.tex"
+-'  1  0  ~/Downloads/kypriyanov/main.tex
+|4,39,1,0,1664021275,"~/Downloads/kypriyanov/main.tex"
+-'  1  0  ~/Downloads/kypriyanov/main.tex
+|4,39,1,0,1664021275,"~/Downloads/kypriyanov/main.tex"
 -'  1  0  ~/Downloads/kypriyanov/main.tex
 |4,39,1,0,1664021275,"~/Downloads/kypriyanov/main.tex"
 -'  1  0  ~/.gitignore
@@ -96,10 +108,52 @@
 |4,39,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
 -'  4  0  ~/Downloads/kypriyanov/main.tex
 |4,39,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
+-'  4  0  ~/Downloads/kypriyanov/main.tex
+|4,39,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
+-'  4  0  ~/Downloads/kypriyanov/main.tex
+|4,39,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
+-'  4  0  ~/Downloads/kypriyanov/main.tex
+|4,39,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
+-'  4  0  ~/Downloads/kypriyanov/main.tex
+|4,39,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
+-'  4  0  ~/Downloads/kypriyanov/main.tex
+|4,39,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
+-'  4  0  ~/Downloads/kypriyanov/main.tex
+|4,39,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
+-'  4  0  ~/Downloads/kypriyanov/main.tex
+|4,39,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
+-'  4  0  ~/Downloads/kypriyanov/main.tex
+|4,39,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
+-'  4  0  ~/Downloads/kypriyanov/main.tex
+|4,39,4,0,1664019074,"~/Downloads/kypriyanov/main.tex"
 -'  1  0  ~/Downloads/kypriyanov/main.tex
 |4,39,1,0,1664019057,"~/Downloads/kypriyanov/main.tex"
 -'  1  0  ~/Downloads/kypriyanov/main.tex
 |4,39,1,0,1664019057,"~/Downloads/kypriyanov/main.tex"
+-'  1  0  ~/Downloads/kypriyanov/main.tex
+|4,39,1,0,1664019057,"~/Downloads/kypriyanov/main.tex"
+-'  1  0  ~/Downloads/kypriyanov/main.tex
+|4,39,1,0,1664019057,"~/Downloads/kypriyanov/main.tex"
+-'  1  0  ~/Downloads/kypriyanov/main.tex
+|4,39,1,0,1664019057,"~/Downloads/kypriyanov/main.tex"
+-'  1  0  ~/Downloads/kypriyanov/main.tex
+|4,39,1,0,1664019057,"~/Downloads/kypriyanov/main.tex"
+-'  1  0  ~/Downloads/kypriyanov/main.tex
+|4,39,1,0,1664019057,"~/Downloads/kypriyanov/main.tex"
+-'  1  0  ~/Downloads/kypriyanov/main.tex
+|4,39,1,0,1664019057,"~/Downloads/kypriyanov/main.tex"
+-'  1  8  ~/Downloads/kypriyanov/main.tex
+|4,39,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
+-'  1  8  ~/Downloads/kypriyanov/main.tex
+|4,39,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
+-'  1  8  ~/Downloads/kypriyanov/main.tex
+|4,39,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
+-'  1  8  ~/Downloads/kypriyanov/main.tex
+|4,39,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
+-'  1  8  ~/Downloads/kypriyanov/main.tex
+|4,39,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
+-'  1  8  ~/Downloads/kypriyanov/main.tex
+|4,39,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
 -'  1  8  ~/Downloads/kypriyanov/main.tex
 |4,39,1,8,1664019018,"~/Downloads/kypriyanov/main.tex"
 -'  1  8  ~/Downloads/kypriyanov/main.tex
@@ -128,6 +182,78 @@
 |4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
 -'  1  0  ~/.config/zathura/zathurarc
 |4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
+-'  1  0  ~/.config/zathura/zathurarc
+|4,39,1,0,1664018556,"~/.config/zathura/zathurarc"
 -'  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
 |4,39,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
 -'  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
@@ -160,138 +286,18 @@
 |4,39,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
 -'  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
 |4,39,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  4  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,4,0,1664018539,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  1  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,1,0,1664018526,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
--'  3  0  ~/Downloads/kypriyanov/.config/zathura/zathurarc
-|4,39,3,0,1664018524,"~/Downloads/kypriyanov/.config/zathura/zathurarc"
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	*	1664021247	0
-	"	1	0
+	*	1664021790	0
+	"	10	9
+	^	10	10
+	.	10	9
+	+	7	11
+	+	9	13
+	+	1	20
+	+	10	9
 
 > ~/Downloads/kypriyanov/main.tex
 	*	1664020791	0
