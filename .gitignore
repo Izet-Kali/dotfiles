@@ -1,0 +1,9 @@
+/Downloads/
+.bash_history
+.bash_logout
+.cache/
+.local/
+.texlive/
+.Xauthority
+.config/xfce4
+.config/ranger
