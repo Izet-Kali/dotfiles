@@ -19,7 +19,7 @@ exec --no-startup-id nm-appleta
 exec --no-startup-id compton
 
 # Запуск панели xfce4, в качестве бара
-exec --no-startup-id xfce4-panel --disable-wm-check 
+exec xfce4-panel 
 
 
 
@@ -81,7 +81,8 @@ set $ws10 "10"
 bindsym $mod+Return exec xfce4-terminal #, resize set 600 500, move position center
 
 # Запуск лаунчера rofi
-bindsym $mod+d exec rofi -show run -theme solarized -font "Monospace Regular 14"
+bindsym $mod+d exec rofi -show run -theme solarized -font "Monospase Regular 14" -widht 50 -lines 10 -show-icons 
+
 
 # Закрыть окно
 bindsym $mod+q kill 

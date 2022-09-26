@@ -37,8 +37,8 @@ set guifont=MonospaceRegular:h14
 syntax enable
 
 "Установка темы
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 "Добавление связи английских символов, с русскими, чтобы реже переключать
 "раскладку клавиатуры + к удобству
@@ -46,7 +46,8 @@ set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNO
 
 
 let g:tex_flavor='XeLaTex'
-let g:vimtex_view_metod='zathura'
+let g:vimtex_view_method='zathura'
+let g:Vimtex_view_general_viewer ='zathura'
 let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
