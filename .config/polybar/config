@@ -1,0 +1,482 @@
+# use: 
+# sudo pacman -S ttf-font-awesome notejs-material-design-icons
+# sudo pacman -S pulseaudio pulseaudio-alsa
+
+
+
+
+
+[settings]
+pseudo-transparency = true
+
+
+
+
+
+
+#[Расцветка solarized-dark]
+
+[colors]
+background = [[002B36]]
+background-alt = [[002B36]]
+foreground = [[BCC3C3]]
+foreground-alt = [[BCC3C3]]
+primary = [[ff652a]]
+secondary = [[e60053]]
+alert = [[FF0000]]
+
+
+
+# [Размеры панели]
+# указываем название бара к которому будет обрящаться скрипт автозапуска launch.sh в стоке [bar/название бара]
+
+[bar/example]
+
+
+# [Ширина панели]
+width = 100%
+
+# [Высота панели]
+height = 25
+
+
+# [Зафиксированый центр]
+# Можно задать динамический командой false
+fixed-center = true
+
+# [Локаль панели]
+locale = ru_RU.UTF-8
+
+border-size = 2
+[[border-top-size]] = 0
+[[border-bottom-size]] = 0
+[[border-left-size]] = 0
+[[border-right-size]] = 0
+border-color = ${colors.background-alt}
+
+# [Параметры панели под модулями]
+line-size = 1
+;line-color = [[f00]]
+
+
+# [Отступы панели]
+padding-left = 0
+padding-right = 0
+
+
+# [Отступы между модулями]
+module-margin-left = 2
+module-margin-right = 2
+
+
+# [Шрифты]
+font-0 = Iosevka Nerd Font:style=Medium:size=10;3
+font-1 = FontAwesome5Free:style=Solid:size=7.5;2.5
+font-2 = Weather Icons:size=7;2
+font-3 = FontAwesome5Brands:style=Solid:size=7.5;2.5
+
+
+
+
+# [Расположение и активация модулей]
+
+
+modules-left = i3 menu
+modules-center = title
+modules-right = date eth cpu temperature memory temperature_core2 temperature_core3 pulseaudio xkeyboard powermenu
+
+
+# системный лоток расположение tray иконок none|right|center|left
+tray-position = right
+tray-padding = 2
+tray-detached = false
+
+[[tray-background]] = [[0063ff]]
+
+
+
+# [Модули]
+
+
+
+
+
+#[module/menu]
+[[type]] = custom/menu
+#
+[[format-spacing]] = 2
+#
+[[label-open]] = 
+##label-open-foreground = [[dfecfa]]
+[[label-close]] = 
+[[format-padding]] = 1
+#
+[[label-separator]] = 𠘻
+##label-separator-foreground = [[dfecfa]]
+#
+#### меню #######
+[[menu-0-0]] = 
+[[menu-0-0-exec]] = libreoffice --calc
+#
+[[menu-0-1]] = 
+[[menu-0-1-exec]] = libreoffice --writer
+#
+[[menu-0-2]] = 
+[[menu-0-2-exec]] =
+#
+[[menu-0-2]] = 
+[[menu-0-2-exec]] = galculator
+#
+[[menu-0-3]] = 
+[[menu-0-3-exec]] = mousepad
+
+
+
+
+
+[module/flux]
+type = custom/script
+exec = echo ""
+[[format-underline]] = [[e8793e]]
+click-left = killall -s 6 xflux && xflux -l 55.7, -g 37.6 -k 2000
+click-right = killall -s 6 xflux && xflux -l 55.7, -g 37.6 -k 10000
+
+[settings]
+[[Reload]] upon receiving XCB_RANDR_SCREEN_CHANGE_NOTIFY events
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[[Used]] for top and bottom aligned bars
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+[[Requires]] polybar to be built with xcursor support (xcb-util-cursor)
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[[Currently]] supported WM's
+[[wm-restack]] = bspwm
+wm-restack = i3
+
+[[Tell]] the Window Manager not to configure the window.
+[[Use]] this to detach the bar if your WM is locking its size/position.
+;override-redirect = true
+
+[[Fallback]] click handlers that will be called if
+[[there]]'s no matching module handler found.
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+;vim:ft=dosini
+
+
+
+
+
+#[Модуль i3]
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+strip-wsnumbers = false
+enable-click = false
+enable-scroll = false
+
+;ws-icon-0 = 1;
+;ws-icon-1 = 2;
+;ws-icon-2 = 3;
+;ws-icon-3 = 4;
+;ws-icon-4 = 5;
+;ws-icon-5 = 6;
+;ws-icon-6 = 7;
+;ws-icon-7 = 8;
+;ws-icon-8 = 9;
+;ws-icon-9 = 10;
+;ws-icon-default = ♟
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+label-mode = %mode%
+label-mode-padding = 1
+label-mode-foreground = ${colors.foreground-alt}
+label-mode-background = ${colors.background-alt}
+
+; focused = Active workspace on focused monitor
+label-focused = %index%
+label-focused-foreground = ${colors.foreground}
+label-focused-background = ${colors.background}
+label-focused-underline = ${colors.foreground-alt}
+label-focused-padding = 1
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %index%
+label-unfocused-padding = ${self.label-focused-padding}
+label-unfocused-foreground = ${colors.foreground-alt}
+label-unfocused-background = ${colors.background-alt}
+
+; visible = Active workspace on unfocused monitor
+label-visible = %index%
+label-visible-foreground = ${self.label-focused-background}
+label-visible-background = ${self.label-focused-foreground}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-focused-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %index%
+label-urgent-foreground = ${colors.foreground}
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+; Separator in between workspaces
+label-separator =
+label-separator-padding = 0
+label-separator-foreground = ${colors.foreground}
+
+
+
+
+
+# [Модуль сетевого интерфейса eth]
+
+[module/eth]
+type = internal/network
+interface = enp3s0
+interval = 1.0
+
+format-connected-prefix = ""
+format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-background = ${colors.background-alt}
+;format-connected-underline = ${colors.foreground}
+label-connected = " %local_ip% "
+
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected = "" %ifname%
+label-disconnected-foreground = ${colors.foreground-alt}
+
+
+
+
+
+# [Модуль pulseaudio]
+
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
+label-volume-foreground = ${root.foreground}
+label-muted = 
+label-muted-foreground = [[e8793e]]
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+
+
+
+
+
+# [модуль загрузки CPU]
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground}
+[[format-overline]] = [[408AB9]]
+[[format-underline]] = ${colors.foreground}
+label =  CPU %percentage%%
+
+
+
+
+
+# [Модуль отображения температуры процесора]
+
+[module/temperature_core3]
+type = internal/temperature
+thermal-zone = 0
+# при достижении критической отметки модуль меняет цвет на тот который мы зададим в label-warn
+warn-temperature = 65
+
+[[путь]] к файлу отвечающему за температуру ядра
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input
+
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = [[CA4E4E]]
+[[format-overline]] = [[DFC257]]
+[[format-underline]] = ${colors.foreground}
+[[format-warn-underline]] = [[CA4E4E]]
+interval = 10
+
+format = <ramp> <label>
+format-warn = <ramp> <label-warn>
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground =   [[ff0000]]
+[[ramp-foreground]] = [[FBE191]]
+
+
+
+
+
+# [Модуль ОЗУ]
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground}
+[[format-overline]] = [[61C07C]]
+[[format-underline]] = ${colors.foreground}
+label =  MEM %percentage_used%%
+
+
+
+
+
+# [Модуль раскладки клавиатуры]
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+label-NAME-maxlen = 10
+[[format-prefix]] = ""
+[[format-prefix-foreground]] = ${colors.foreground-alt}
+[[format-prefix-overline]] = CF5E7F
+[[format-prefix-underline]] = CF5E7F
+
+[[label-layout]] =  %layout%
+[[label-layout-overline]] = CF5E7F
+[[label-layout-underline]] = CF5E7F
+
+[[label-indicator-padding]] = 2
+[[label-indicator-margin]] = 0
+[[label-indicator-background]] = 2B7DBC
+[[label-indicator-overline]] = 2B7DBC
+[[label-indicator-underline]] = 2B7DBC
+[[format-underline]] = [[fff]]
+
+
+
+
+
+# [Модуль параметров батареи]
+
+#[module/battery-combined-tlp]
+[[type]] = custom/script
+[[exec]] = ~/.config/polybar/scripts/battery-combined-tlp.sh
+[[interval]] = 10
+##label-underline = 2B7DBC
+
+
+
+
+
+# [Модуль календарь]
+
+[module/popup-calendar]
+type = custom/script
+exec = ~/.config/polybar/scripts/popup-calendar.sh
+interval = 5
+click-left = ~/.config/polybar/scripts/popup-calendar.sh --popup &
+
+
+
+
+
+# [Модуль отображения времени и даты]
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = "%a %d %b"
+date-alt = "%a %Y/%m/%d"
+
+time = " %H:%M:%S"
+time-alt = " %H:%M"
+
+format-prefix = ""
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-background = ${colors.background-alt}
+;format-underline = ${colors.foreground}
+
+label = %date%%time%
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+
+
+
+
+[[Фон]] для модуля
+[[format-background]] = [[7163AF]]
+[[format-foreground]] = ${colors.foreground}
+
+
+
+
+
+# [Заголовок текущего окна по центру]
+
+[module/title]
+type = internal/xwindow
+label = %{F#ABE0FF}%title:0:50:...%
+
+
+
+
+
+[module/speedtest]
+type = custom/script
+exec = ~/.config/polybar/scripts/speedtest_api.py
+tail = true
+interval = 90
+
+
+
+
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 80
+
+format = "<ramp><label>"
+format-foreground = ${colors.foreground-alt}
+format-background = ${colors.background-alt}
+;format-underline = ${colors.foreground}
+format-warn = <ramp><label-warn>
+;format-warn-underline = [[f50a4d]]
+
+label = "%temperature%"
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+label-warn = "%temperature%"
+label-warn-foreground = ${colors.alert}
+
+ramp-0 = ""
+ramp-1 = ""
+ramp-2 = ""
+ramp-foreground = ${colors.foreground-alt}
+ramp-background = ${colors.background-alt}
+
+[module/powermenu]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 1
+
