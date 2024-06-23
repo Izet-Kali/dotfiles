@@ -1,0 +1,3 @@
+;extra icons to choose from
+;http://fontawesome.io/cheatsheet/
+;       v     
