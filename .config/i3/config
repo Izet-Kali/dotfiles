@@ -1,5 +1,7 @@
+
 # Use:
 # sudo pacman -S xorg xorgserver i3 rofi comptom nitrogen xfce4-pannel xfce4-terminal thunar xkeyboard-config lxappearance 
+# install nerd-fonts-git for polybar
 
 # Установка клавиши $mod на клавишу Super (win)
 set $mod Mod4
@@ -19,8 +21,8 @@ exec --no-startup-id nm-appleta
 exec --no-startup-id compton
 
 # Запуск панели xfce4, в качестве бара
-exec xfce4-panel 
-
+#exec xfce4-panel 
+exec --no-startup-id polybar #example
 
 
 
@@ -78,11 +80,11 @@ set $ws10 "10"
 #[Хоткеи]
 
 # Запуск терминала
-bindsym $mod+Return exec xfce4-terminal #, resize set 600 500, move position center
+bindsym $mod+Return exec alacritty, resize set 600 500, move position center
 
 # Запуск лаунчера rofi
-bindsym $mod+d exec rofi -show run -theme solarized -font "Monospase Regular 14" -widht 50 -lines 10 -show-icons 
-
+#bindsym $mod+d exec rofi -show run -theme solarized -font "Monospase Regular 14" -widht 50 -lines 10 -show-icons 
+bindsym $mod+d exec rofi -show run -font "Monospase Regular 14" -widht 50 -lines 10 -show-icons 
 
 # Закрыть окно
 bindsym $mod+q kill 
