@@ -1,7 +1,8 @@
-
 # Use:
-# sudo pacman -S xorg xorgserver i3 rofi comptom nitrogen xfce4-pannel xfce4-terminal thunar xkeyboard-config lxappearance 
+# sudo pacman -S xorg xorgserver xorg-xbacklight i3 rofi comptom nitrogen xfce4-pannel xfce4-terminal thunar xkeyboard-config lxappearance sof-firmware
 # install nerd-fonts-git for polybar
+
+include hotkeys.conf
 
 # Установка клавиши $mod на клавишу Super (win)
 set $mod Mod4
@@ -12,7 +13,14 @@ set $mod Mod4
 
 # [Автозапуск]
 
-exec --no-startup-id nitrogen --restore
+# Графическое окружение
+#exec --no-startup-id nitrogen --restore
+
+
+#exec conky 
+
+
+exec --no-startup-id xwinwrap -g 1920x1080+0+0 -ni -ov -- mpv --loop-file=inf --speed=1 -wid %WID ~/Videos/wallpapper/After_sunset_4k.mp4
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
@@ -20,10 +28,18 @@ exec --no-startup-id nm-appleta
 
 exec --no-startup-id compton
 
-# Запуск панели xfce4, в качестве бара
 #exec xfce4-panel 
 exec --no-startup-id polybar #example
 
+# Используемый софт
+
+exec --no-startup-id spoofdpi
+
+exec --no-startup-id i3-msg 'workspace $ws1; exec firefox'
+
+#exec --no-startup-id i3-msg 'workspace $ws5; exec pidgin'
+
+exec --no-startup-id i3-msg 'workspace $ws6; exec obsidian'
 
 
 
@@ -42,21 +58,21 @@ smart_gaps on
 smart_borders on
 
 # Увеличение толщины рамки, чтобы было лучше видно активное окно
-for_window [tiling] border pixel 3
+for_window [tiling] border pixel 5
 
 # Отступы между открытыми окнами
 gaps inner 5
 
-# Включает умные рамки, когда открыто одно окно рамки выключаются
-smart_borders on
+#  yay -s i3-rounded-border-patch-git #not worck
+#border_radius 1
+
 
 # Переключение раскладки
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
 
 #[Открытие программ в плавающе окне]
-#for_window [class='xfce4-terminal'] floating toggle 
-
-
+# После вызова программы добавить '--class=floating' и тогда все заработает
+for_window [class="^floating$"] floating enable
 
 
 
@@ -72,126 +88,3 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
-
-
-
-
-
-#[Хоткеи]
-
-# Запуск терминала
-bindsym $mod+Return exec alacritty, resize set 600 500, move position center
-
-# Запуск лаунчера rofi
-#bindsym $mod+d exec rofi -show run -theme solarized -font "Monospase Regular 14" -widht 50 -lines 10 -show-icons 
-bindsym $mod+d exec rofi -show run -font "Monospase Regular 14" -widht 50 -lines 10 -show-icons 
-
-# Закрыть окно
-bindsym $mod+q kill 
-
-# Выключить компьютер
-bindsym $mod+Escape exec shutdown -h now
-
-# Увеличить яркость экрана
-bindsym Fn+F6 exec xbacklight +10 
-
-# Уменьшить яркость экрана
-bindsym Fn+F5 exec xbacklight -10 
-
-# Окна распологаются горизонтально
-bindsym $mod+h split h 
-
-# Окна располагаются вертикально
-bindsym $mod+v split v 
-
-# Развернуть окно на весь экран
-bindsym $mod+f fullscreen toggle
-
-# Включение\Выключение тайлинга, для окна
-bindsym $mod+Shift+space floating toggle 
-
-# Перезагрузка i3
-bindsym $mod+Shift+r restart 
-
-# Cпрятать окно, чтобы оно не мешалось, но в то же время было всегда под рукой.
-# Можно добавить несколько окон и переключаться между ними.
-bindsym $mod+Shift+Tab move scratchpad
-bindsym $mod+Tab scratchpad show, resize set 600 500, move position center
-
-# Смена выделения окна
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-# Альтернативный способ смены выделения окна
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
-# Переместить выделенное окно внутри рабочего стола
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-
-# Альтернативные клавиши перемещения окон
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
-# Перевод окон в режим отображения с вкладками, оринтированными вертикально
-bindsym $mod+s layout stacking
-
-# Перевод окон в режим отображения с вкладками, оринтированными горизонтально
-bindsym $mod+w layout tabbed
-
-# Перевод окон в "обычный" режим отображения 
-bindsym $mod+e layout toggle split
-
-# Переместить окно полноэкранный режим
-bindsym $mod+space focus mode_toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
-
-# [Клавиши смены рабочих столов]
-bindsym $mod+1 workspace number $ws1
-bindsym $mod+2 workspace number $ws2
-bindsym $mod+3 workspace number $ws3
-bindsym $mod+4 workspace number $ws4
-bindsym $mod+5 workspace number $ws5
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
-
-#[Переместить окно, находящееся в фокусе, на рабочий стол]
-bindsym $mod+Shift+1 move container to workspace number $ws1
-bindsym $mod+Shift+2 move container to workspace number $ws2
-bindsym $mod+Shift+3 move container to workspace number $ws3
-bindsym $mod+Shift+4 move container to workspace number $ws4
-bindsym $mod+Shift+5 move container to workspace number $ws5
-bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
-
-# Перезагрузка i3
-bindsym $mod+r mode "resize"
-
-# [Модуль настройки звука (не работает!!!)]
-#XF86AudioLowerVolume 
-#XF86AudioRaiseVolume 
-
-#set $refresh_i3status killall -SIGUSR1 i3status
-#bindsym Fn+F12 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-#bindsym Fn+F11 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && #$refresh_i3status
-#bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && #$refresh_i3status
-
-floating_modifier $mod

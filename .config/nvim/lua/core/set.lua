@@ -28,3 +28,9 @@ vim.cmd("NvimTreeOpen")
 
 
 vim.cmd("set clipboard+=unnamedplus")
+<<<<<<< HEAD
+=======
+
+
+vim.cmd("set langmap =ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz")
+>>>>>>> 1afe33f (nvim, zhathura)

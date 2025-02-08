@@ -9,3 +9,6 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 eval "$(starship init bash)"
+
+export VISUAL=nvim;
+export EDITOR=nvim;
